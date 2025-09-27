@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - ZenBlog Bootstrap Template</title>
+  <title>Green Life Blog - Cuộc sống xanh</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -24,17 +24,11 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome672/css/all.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: ZenBlog
-  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
-  * Updated: Aug 08 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -60,7 +54,7 @@
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="login.html">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
                   <li><a href="#">Deep Dropdown 3</a></li>
                   <li><a href="#">Deep Dropdown 4</a></li>
@@ -179,9 +173,10 @@
           <div class="row g-5">
             <div class="col-lg-4">
 
-              <div class="post-entry lg">
+              <!-- <div class="post-entry lg">
                 <a href="blog-details.html"><img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid"></a>
-                <div class="post-meta"><span class="date">VĂN HOÁ</span> <span class="mx-1">•</span> <span>Thứ Sáu, 15/09/2025</span></div>
+                <div class="post-meta"><span class="date">SỨC KHOẺ</span> <span class="mx-1">•</span> <span>Thứ Sáu,
+                    15/09/2025</span></div>
                 <h2><a href="blog-details.html">Tập Thể Dục Xanh: Kết Hợp Vận Động và Thiên Nhiên</a></h2>
                 <p class="mb-4 d-block">Tập thể dục không chỉ giúp cơ thể khỏe mạnh mà còn là cơ hội để kết nối với
                   thiên nhiên xung quanh.
@@ -200,51 +195,114 @@
                     <h3 class="m-0 p-0">Nguyễn Đức Toàn</h3>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
+              <div class="post-entry lg">
+                <a href="blog-details.html">
+                  <img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid">
+                </a>
+                <div class="post-meta">
+                  <span class="date">SỨC KHOẺ</span> <span class="mx-1">•</span>
+                  <span>Thứ Sáu, 15/09/2025</span>
+                </div>
+                <h2>
+                  <a href="blog-details.html">Tập Thể Dục Xanh: Kết Hợp Vận Động và Thiên Nhiên</a>
+                </h2>
+                <div class="d-flex align-items-center author">
+                  <div class="photo">
+                    <img src="assets/img/person-1.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="name">
+                    <h3 class="m-0 p-0">Nguyễn Đức Toàn</h3>
+                  </div>
+                </div>
+                <!-- Nội dung ẩn ban đầu với max-height + transition -->
+                <p class="mt-2 mb-4 d-block" id="post-content"
+                  style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease-in-out;">
+                  Tập thể dục không chỉ giúp cơ thể khỏe mạnh mà còn là cơ hội để kết nối với thiên nhiên xung quanh.
+                  Những buổi chạy bộ trong công viên, yoga ngoài trời hay đi bộ giữa không gian xanh mang lại năng lượng
+                  tích cực và giảm căng thẳng. Bài viết này sẽ gợi ý cách rèn luyện sức khỏe theo phong cách sống xanh
+                  mỗi ngày. <br>
+                  Tập thể dục không chỉ giúp cơ thể khỏe mạnh mà còn là cơ hội để kết nối với thiên nhiên xung quanh.
+                  Những buổi chạy bộ trong công viên, yoga ngoài trời hay đi bộ giữa không gian xanh mang lại năng lượng
+                  tích cực và giảm căng thẳng. Bài viết này sẽ gợi ý cách rèn luyện sức khỏe theo phong cách sống xanh
+                  mỗi ngày. <br>
+                  Tập thể dục không chỉ giúp cơ thể khỏe mạnh mà còn là cơ hội để kết nối với thiên nhiên xung quanh.
+                  Những buổi chạy bộ trong công viên, yoga ngoài trời hay đi bộ giữa không gian xanh mang lại năng lượng
+                  tích cực và giảm căng thẳng.
+                </p>
+
+                <!-- Nút hiển thị -->
+                <button class="show-btn btn btn-primary mb-3 border-0 bg-white text-black p-0">Xem chi tiết <i
+                    class="fa fa-angle-double-down animated-arrow"></i></button>
+
+              </div>
             </div>
+
+            <script>
+              const buttons = document.querySelectorAll('.show-btn');
+
+              buttons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                  // Tìm phần tử <p> liền kề nút
+                  const content = btn.previousElementSibling;
+
+                  if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+                    content.style.maxHeight = content.scrollHeight + "px"; // mở nội dung
+                    btn.innerHTML = 'Thu gọn <i class="fa fa-angle-double-up animated-arrow"></i>';
+                  } else {
+                    content.style.maxHeight = "0"; // đóng nội dung
+                    btn.innerHTML = 'Xem chi tiết <i class="fa fa-angle-double-down animated-arrow"></i>';
+                  }
+                });
+              });
+            </script>
+
 
             <div class="col-lg-8">
               <div class="row g-5">
                 <div class="col-lg-4 border-start custom-border">
                   <div class="post-entry">
                     <a href="blog-details.html"><img src="assets/img/post-landscape-2.jpg" alt="" class="img-fluid"></a>
-                    <div class="post-meta"><span class="date">Sport</span> <span class="mx-1">•</span> <span>Jul 5th
-                        '22</span></div>
+                    <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Thứ
+                        Sáu, 15/09/2025</span></div>
                     <h2><a href="blog-details.html">Thói Quen Xanh: Tối Ưu Hóa Cuộc Sống Từ Những Chi Tiết Nhỏ</a></h2>
                   </div>
                   <div class="post-entry">
-                    <a href="blog-details.html"><img src="assets/img/post-landscape-5.jpg" alt="" class="img-fluid"></a>
-                    <div class="post-meta"><span class="date">Food</span> <span class="mx-1">•</span> <span>Jul 17th
-                        '22</span></div>
-                    <h2><a href="blog-details.html">Ăn Uống Healthy: Cách Tạo Bữa Ăn Ngon và Bổ Dưỡng</a>
+                    <a href="blog-details.html"><img src="assets/img/post-landscape-2.jpg" alt="" class="img-fluid"></a>
+                    <div class="post-meta"><span class="date">Môi trường</span> <span class="mx-1">•</span> <span>Thứ
+                        Sáu, 15/09/2025</span></div>
+                    <h2><a href="blog-details.html">Môi trường là gì? Vì sao cần bảo vệ môi trường?</a>
                     </h2>
                   </div>
                   <div class="post-entry">
                     <a href="blog-details.html"><img src="assets/img/post-landscape-7.jpg" alt="" class="img-fluid"></a>
-                    <div class="post-meta"><span class="date">Design</span> <span class="mx-1">•</span> <span>Mar 15th
-                        '22</span></div>
+                    <div class="post-meta"><span class="date">Giáo dục</span> <span class="mx-1">•</span> <span>Thứ
+                        Sáu, 15/09/2025</span></div>
                     <h2><a href="blog-details.html">Giảm Rác Thải Nhựa: Trách Nhiệm Cá Nhân và Tác Động Xã Hội</a></h2>
                   </div>
                 </div>
                 <div class="col-lg-4 border-start custom-border">
                   <div class="post-entry">
                     <a href="blog-details.html"><img src="assets/img/post-landscape-3.jpg" alt="" class="img-fluid"></a>
-                    <div class="post-meta"><span class="date">Business</span> <span class="mx-1">•</span> <span>Jul 5th
-                        '22</span></div>
-                    <h2><a href="blog-details.html">Lối Sống Bền Vững: Khi Sức Khỏe Cá Nhân Gắn Liền Với Tương Lai Xã Hội</a></h2>
+                    <div class="post-meta"><span class="date">Cộng đồng</span> <span class="mx-1">•</span> <span>Thứ
+                        Sáu, 15/09/2025</span></div>
+                    <h2><a href="blog-details.html">Lối Sống Bền Vững: Khi Sức Khỏe Cá Nhân Gắn Liền Với Tương Lai Xã
+                        Hội</a></h2>
                   </div>
                   <div class="post-entry">
                     <a href="blog-details.html"><img src="assets/img/post-landscape-6.jpg" alt="" class="img-fluid"></a>
-                    <div class="post-meta"><span class="date">Tech</span> <span class="mx-1">•</span> <span>Mar 1st
-                        '22</span></div>
-                    <h2><a href="blog-details.html">Sống Xanh, Sống Khỏe: Hành Trình Bảo Vệ Môi Trường Từ Những Thói Quen Nhỏ</a></h2>
+                    <div class="post-meta"><span class="date">Văn hoá</span> <span class="mx-1">•</span> <span>Thứ
+                        Sáu, 15/09/2025</span></div>
+                    <h2><a href="blog-details.html">Sống Xanh, Sống Khỏe: Hành Trình Bảo Vệ Môi Trường Từ Những Thói
+                        Quen Nhỏ</a></h2>
                   </div>
                   <div class="post-entry">
                     <a href="blog-details.html"><img src="assets/img/post-landscape-8.jpg" alt="" class="img-fluid"></a>
-                    <div class="post-meta"><span class="date">Travel</span> <span class="mx-1">•</span> <span>Jul 5th
-                        '22</span></div>
-                    <h2><a href="blog-details.html">10 thói quen giúp duy trì tim mạch khoẻ mạnh. Bạn đã biết chưa?</a></h2>
+                    <div class="post-meta"><span class="date">Gặp gỡ</span> <span class="mx-1">•</span> <span>Thứ
+                        Sáu, 15/09/2025</span></div>
+                    <h2><a href="blog-details.html">10 thói quen giúp duy trì tim mạch khoẻ mạnh. Bạn đã biết
+                        chưa?</a></h2>
                   </div>
                 </div>
 
@@ -252,41 +310,41 @@
                 <div class="col-lg-4">
 
                   <div class="trending">
-                    <h3>Trending</h3>
+                    <h3>Xu hướng</h3>
                     <ul class="trending-post">
                       <li>
                         <a href="blog-details.html">
                           <span class="number">1</span>
-                          <h3>The Best Homemade Masks for Face (keep the Pimples Away)</h3>
-                          <span class="author">Jane Cooper</span>
+                          <h3>Sống Xanh, Sống Khỏe: Hành Trình Bảo Vệ Môi Trường Từ Những Thói Quen Nhỏ</h3>
+                          <span class="author">Huỳnh Tấn Nam</span>
                         </a>
                       </li>
                       <li>
                         <a href="blog-details.html">
                           <span class="number">2</span>
-                          <h3>17 Pictures of Medium Length Hair in Layers That Will Inspire Your New Haircut</h3>
-                          <span class="author">Wade Warren</span>
+                          <h3>Lối Sống Bền Vững: Khi Sức Khỏe Cá Nhân Gắn Liền Với Tương Lai Xã Hội</h3>
+                          <span class="author">Nguyễn Thuỳ Vi</span>
                         </a>
                       </li>
                       <li>
                         <a href="blog-details.html">
                           <span class="number">3</span>
-                          <h3>13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</h3>
-                          <span class="author">Esther Howard</span>
+                          <h3>Môi trường là gì? Vì sao cần bảo vệ môi trường?</h3>
+                          <span class="author">Phạm Thị Hương</span>
                         </a>
                       </li>
                       <li>
                         <a href="blog-details.html">
                           <span class="number">4</span>
-                          <h3>9 Half-up/half-down Hairstyles for Long and Medium Hair</h3>
-                          <span class="author">Cameron Williamson</span>
+                          <h3>Tập Thể Dục Xanh: Kết Hợp Vận Động và Thiên Nhiên</h3>
+                          <span class="author">Nguyễn Đức Toàn</span>
                         </a>
                       </li>
                       <li>
                         <a href="blog-details.html">
                           <span class="number">5</span>
-                          <h3>Life Insurance And Pregnancy: A Working Mom’s Guide</h3>
-                          <span class="author">Jenny Wilson</span>
+                          <h3>Gặp gỡ chuyên gia trong lĩnh vực chăm sóc sức khoẻ</h3>
+                          <span class="author">Lan Hạ</span>
                         </a>
                       </li>
                     </ul>
@@ -309,8 +367,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <div class="section-title-container d-flex align-items-center justify-content-between">
-          <h2>Culture</h2>
-          <p><a href="categories.html">See All Culture</a></p>
+          <h2>Sức khoẻ</h2>
+          <p><a href="categories.html">Xem tất cả bài viết mục Sức khoẻ</a></p>
         </div>
       </div><!-- End Section Title -->
 
@@ -324,10 +382,9 @@
                 <img src="assets/img/post-landscape-6.jpg" alt="" class="img-fluid">
               </a>
               <div>
-                <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+                <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                     '22</span></div>
-                <h3><a href="blog-details.html">What is the son of Football Coach John Gruden, Deuce Gruden doing
-                    Now?</a></h3>
+                <h3><a href="blog-details.html">Gặp gỡ chuyên gia trong lĩnh vực chăm sóc sức khoẻ</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni
                   voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente,
                   laudantium dolorum itaque libero eos deleniti?</p>
@@ -344,28 +401,28 @@
               <div class="col-lg-4">
                 <div class="post-list border-bottom">
                   <a href="blog-details.html"><img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+                  <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                       '22</span></div>
-                  <h2 class="mb-2"><a href="blog-details.html">11 Work From Home Part-Time Jobs You Can Do Now</a></h2>
+                  <h2 class="mb-2"><a href="blog-details.html">Môi trường là gì? Vì sao cần bảo vệ môi trường?</a></h2>
                   <span class="author mb-3 d-block">Jenny Wilson</span>
                   <p class="mb-4 d-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
                     repudiandae, inventore pariatur numquam cumque possimus</p>
                 </div>
 
                 <div class="post-list">
-                  <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+                  <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                       '22</span></div>
-                  <h2 class="mb-2"><a href="blog-details.html">5 Great Startup Tips for Female Founders</a></h2>
+                  <h2 class="mb-2"><a href="blog-details.html">Gặp gỡ chuyên gia trong lĩnh vực chăm sóc sức
+                      khoẻ</a></h2>
                   <span class="author mb-3 d-block">Jenny Wilson</span>
                 </div>
               </div>
               <div class="col-lg-8">
                 <div class="post-list">
                   <a href="blog-details.html"><img src="assets/img/post-landscape-2.jpg" alt="" class="img-fluid"></a>
-                  <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+                  <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                       '22</span></div>
-                  <h2 class="mb-2"><a href="blog-details.html">How to Avoid Distraction and Stay Focused During Video
-                      Calls?</a></h2>
+                  <h2 class="mb-2"><a href="blog-details.html">Môi trường là gì? Vì sao cần bảo vệ môi trường?</a></h2>
                   <span class="author mb-3 d-block">Jenny Wilson</span>
                   <p class="mb-4 d-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
                     repudiandae, inventore pariatur numquam cumque possimus</p>
@@ -376,48 +433,49 @@
 
           <div class="col-md-3">
             <div class="post-list border-bottom">
-              <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+              <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                   '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">How to Avoid Distraction and Stay Focused During Video
-                  Calls?</a></h2>
-              <span class="author mb-3 d-block">Jenny Wilson</span>
-            </div>
-
-            <div class="post-list border-bottom">
-              <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
-                  '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">17 Pictures of Medium Length Hair in Layers That Will Inspire
-                  Your New Haircut</a></h2>
-              <span class="author mb-3 d-block">Jenny Wilson</span>
-            </div>
-
-            <div class="post-list border-bottom">
-              <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
-                  '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">9 Half-up/half-down Hairstyles for Long and Medium Hair</a>
+              <h2 class="mb-2"><a href="blog-details.html">Gặp gỡ chuyên gia trong lĩnh vực chăm sóc sức khoẻ</a>
               </h2>
               <span class="author mb-3 d-block">Jenny Wilson</span>
             </div>
 
             <div class="post-list border-bottom">
-              <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+              <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                   '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">Life Insurance And Pregnancy: A Working Mom’s Guide</a></h2>
+              <h2 class="mb-2"><a href="blog-details.html">Môi trường là gì? Vì sao cần bảo vệ môi trường?</a></h2>
               <span class="author mb-3 d-block">Jenny Wilson</span>
             </div>
 
             <div class="post-list border-bottom">
-              <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+              <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                   '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">The Best Homemade Masks for Face (keep the Pimples Away)</a>
+              <h2 class="mb-2"><a href="blog-details.html">Gặp gỡ chuyên gia trong lĩnh vực chăm sóc sức khoẻ</a>
               </h2>
               <span class="author mb-3 d-block">Jenny Wilson</span>
             </div>
 
             <div class="post-list border-bottom">
-              <div class="post-meta"><span class="date">Culture</span> <span class="mx-1">•</span> <span>Jul 5th
+              <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
                   '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">10 Life-Changing Hacks Every Working Mom Should Know</a></h2>
+              <h2 class="mb-2"><a href="blog-details.html">Lối Sống Bền Vững: Khi Sức Khỏe Cá Nhân Gắn Liền Với Tương
+                  Lai Xã Hội</a></h2>
+              <span class="author mb-3 d-block">Jenny Wilson</span>
+            </div>
+
+            <div class="post-list border-bottom">
+              <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
+                  '22</span></div>
+              <h2 class="mb-2"><a href="blog-details.html">Lối Sống Bền Vững: Khi Sức Khỏe Cá Nhân Gắn Liền Với Tương
+                  Lai Xã Hội</a>
+              </h2>
+              <span class="author mb-3 d-block">Jenny Wilson</span>
+            </div>
+
+            <div class="post-list border-bottom">
+              <div class="post-meta"><span class="date">Sức khoẻ</span> <span class="mx-1">•</span> <span>Jul 5th
+                  '22</span></div>
+              <h2 class="mb-2"><a href="blog-details.html">Môi trường là gì? Vì sao cần bảo vệ môi trường?</a></h2>
               <span class="author mb-3 d-block">Jenny Wilson</span>
             </div>
           </div>
@@ -433,8 +491,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <div class="section-title-container d-flex align-items-center justify-content-between">
-          <h2>Business</h2>
-          <p><a href="categories.html">See All Business</a></p>
+          <h2>Môi trường</h2>
+          <p><a href="categories.html">Xem tất cả bài viết mục Môi trường</a></p>
         </div>
       </div><!-- End Section Title -->
 
@@ -450,8 +508,8 @@
               <div>
                 <div class="post-meta"><span class="date">Business</span> <span class="mx-1">•</span> <span>Jul 5th
                     '22</span></div>
-                <h3><a href="blog-details.html">What is the son of Football Coach John Gruden, Deuce Gruden doing
-                    Now?</a></h3>
+                <h3><a href="blog-details.html">Sống Xanh, Sống Khỏe: Hành Trình Bảo Vệ Môi Trường Từ Những Thói Quen
+                    Nhỏ</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni
                   voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente,
                   laudantium dolorum itaque libero eos deleniti?</p>
@@ -470,7 +528,8 @@
                   <a href="blog-details.html"><img src="assets/img/post-landscape-5.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Business</span> <span class="mx-1">•</span> <span>Jul 5th
                       '22</span></div>
-                  <h2 class="mb-2"><a href="blog-details.html">11 Work From Home Part-Time Jobs You Can Do Now</a></h2>
+                  <h2 class="mb-2"><a href="blog-details.html">Sống Xanh, Sống Khỏe: Hành Trình Bảo Vệ Môi Trường Từ
+                      Những Thói Quen Nhỏ</a></h2>
                   <span class="author mb-3 d-block">Jenny Wilson</span>
                   <p class="mb-4 d-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
                     repudiandae, inventore pariatur numquam cumque possimus</p>
@@ -556,8 +615,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <div class="section-title-container d-flex align-items-center justify-content-between">
-          <h2>Lifestyle</h2>
-          <p><a href="categories.html">See All Lifestyle</a></p>
+          <h2>Phong Cách Sống</h2>
+          <p><a href="categories.html">Xem tất cả tin mục Phong Cách Sống</a></p>
         </div>
       </div><!-- End Section Title -->
 
@@ -569,7 +628,7 @@
               <a href="blog-details.html"><img src="assets/img/post-landscape-8.jpg" alt="" class="img-fluid"></a>
               <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Jul 5th
                   '22</span></div>
-              <h2><a href="blog-details.html">11 Work From Home Part-Time Jobs You Can Do Now</a></h2>
+              <h2><a href="blog-details.html">Nghệ Thuật Quản Lý Thời Gian Cho Người Luôn Bận Rộn</a></h2>
               <p class="mb-4 d-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
                 repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil tempore odit ab minus
                 eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis officia nemo, eos quae cumque.
@@ -586,7 +645,7 @@
             <div class="post-list border-bottom">
               <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Jul 5th
                   '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">The Best Homemade Masks for Face (keep the Pimples Away)</a>
+              <h2 class="mb-2"><a href="blog-details.html">Nghệ Thuật Quản Lý Thời Gian Cho Người Luôn Bận Rộn</a>
               </h2>
               <span class="author mb-3 d-block">Jenny Wilson</span>
             </div>
@@ -594,7 +653,7 @@
             <div class="post-list">
               <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Jul 5th
                   '22</span></div>
-              <h2 class="mb-2"><a href="blog-details.html">10 Life-Changing Hacks Every Working Mom Should Know</a></h2>
+              <h2 class="mb-2"><a href="blog-details.html">Bí quyết ngủ ngon: Tắt điện thoại có đủ chưa?</a></h2>
               <span class="author mb-3 d-block">Jenny Wilson</span>
             </div>
 
@@ -604,23 +663,22 @@
             <div class="row g-5">
               <div class="col-lg-4 border-start custom-border">
                 <div class="post-list">
-                  <a href="blog-details.html"><img src="assets/img/post-landscape-6.jpg" alt="" class="img-fluid"></a>
+                  <a href="blog-details.html"><img src="assets/img/post-landscape-9.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Jul 5th
                       '22</span></div>
-                  <h2><a href="blog-details.html">Let’s Get Back to Work, New York</a></h2>
+                  <h2><a href="blog-details.html">Buổi sáng của tôi: Bắt đầu ngày mới như thế nào?</a></h2>
                 </div>
                 <div class="post-list">
-                  <a href="blog-details.html"><img src="assets/img/post-landscape-5.jpg" alt="" class="img-fluid"></a>
+                  <a href="blog-details.html"><img src="assets/img/post-landscape-10.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Jul 17th
                       '22</span></div>
-                  <h2><a href="blog-details.html">How to Avoid Distraction and Stay Focused During Video Calls?</a></h2>
+                  <h2><a href="blog-details.html">Một cuộc trò chuyện thay đổi cách tôi nhìn về cha mẹ</a></h2>
                 </div>
                 <div class="post-list">
                   <a href="blog-details.html"><img src="assets/img/post-landscape-4.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Mar 15th
                       '22</span></div>
-                  <h2><a href="blog-details.html">Why Craigslist Tampa Is One of The Most Interesting Places On the
-                      Web?</a></h2>
+                  <h2><a href="blog-details.html">Đi làm xa nhà: những điều tôi chưa từng nghĩ tới</a></h2>
                 </div>
               </div>
               <div class="col-lg-4 border-start custom-border">
@@ -628,7 +686,7 @@
                   <a href="blog-details.html"><img src="assets/img/post-landscape-3.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Jul 5th
                       '22</span></div>
-                  <h2><a href="blog-details.html">6 Easy Steps To Create Your Own Cute Merch For Instagram</a></h2>
+                  <h2><a href="blog-details.html">Hạnh phúc đôi khi chỉ đến từ một ly cà phê buổi sáng</a></h2>
                 </div>
                 <div class="post-list">
                   <a href="blog-details.html"><img src="assets/img/post-landscape-2.jpg" alt="" class="img-fluid"></a>
@@ -637,7 +695,7 @@
                   <h2><a href="blog-details.html">10 Life-Changing Hacks Every Working Mom Should Know</a></h2>
                 </div>
                 <div class="post-list">
-                  <a href="blog-details.html"><img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid"></a>
+                  <a href="blog-details.html"><img src="assets/img/post-landscape-10.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Lifestyle</span> <span class="mx-1">•</span> <span>Jul 5th
                       '22</span></div>
                   <h2><a href="blog-details.html">5 Great Startup Tips for Female Founders</a></h2>
@@ -711,13 +769,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">ZenBlog</span>
+            <span class="sitename">Green Life Blog</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>120 Nguyễn Huy Tưởng</p>
+            <p>Đà Nẵng, Việt Nam</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+84 236 768 123</span></p>
+            <p><strong>Email:</strong> <span>greenlifeblog@example.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -728,13 +786,13 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Liên kết nhanh</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Điều khoản</a></li>
+            <li><a href="#">Quyền riêng tư</a></li>
           </ul>
         </div>
 
@@ -775,14 +833,14 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">ZenBlog</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Green Life Blog</strong> <span>All Rights
+          Reserved</span></p>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
-          href=“https://themewagon.com>ThemeWagon
+        Designed by <a href="#">Toan Nguyen Duc</a> Distributed by <a href="#">FPT Polytechnic
       </div>
     </div>
 
