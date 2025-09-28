@@ -93,11 +93,11 @@
     <!-- Page Title -->
     <div class="page-title">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Trang đăng nhập</h1>
+        <h1 class="mb-2 mb-lg-0">Trang đăng ký</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Trang chủ</a></li>
-            <li class="current">Đăng nhập</li>
+            <li class="current">Đăng ký</li>
           </ol>
         </nav>
       </div>
@@ -108,8 +108,8 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <div class="section-title-container d-flex align-items-center justify-content-between">
-          <h2>Đăng nhập</h2>
-          <p>Vui lòng đăng nhập vào hệ thống để trải nghiệm đầy đủ nhất các tính năng của blog</p>
+          <h2>Đăng ký</h2>
+          <p>Đăng ký làm thành viên của blog để có thể đăng nhập vào hệ thống</p>
         </div>
       </div><!-- End Section Title -->
       <div class="container pb-5 h-100" data-aos="fade-up">
@@ -120,10 +120,15 @@
               <h5 class="mt-2">Sống khoẻ - Sống xanh</h5>
             </div>
             <form class="">
+              <!-- Name input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="text" id="fullname" name="fullname" class="form-control form-control-lg" />
+                <label class="form-label" for="fullname">Họ và tên</label>
+              </div>
               <!-- Email input -->
               <div data-mdb-input-init class="form-outline mb-4">
-                <input type="email" id="form1Example13" class="form-control form-control-lg" />
-                <label class="form-label" for="form1Example13">Email</label>
+                <input type="email" id="email" name="email" class="form-control form-control-lg" />
+                <label class="form-label" for="email">Email</label>
               </div>
 
               <!-- Password input -->
@@ -131,43 +136,18 @@
                 <input type="password" id="form1Example23" class="form-control form-control-lg" />
                 <label class="form-label" for="form1Example23">Mật khẩu</label>
               </div>
-
-              <div class="d-flex justify-content-around align-items-center mb-4">
-                <!-- Checkbox -->
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
-                  <label class="form-check-label" for="form1Example3"> Lưu tài khoản </label>
-                </div>
-                <a href="#!">Quên mật khẩu?</a>
+              <!-- Confirm password input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control form-control-lg" />
+                <label class="form-label" for="confirmPassword">Xác nhận mật khẩu</label>
               </div>
 
               <!-- Submit button -->
               <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                class="btn submit-button btn-lg btn-block w-100">Đăng nhập</button>
-
-              <div class="divider align-items-center my-4">
-                <p class="text-center fw-bold mx-3 mb-0 text-muted">Hoặc tiếp tục với</p>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <!-- <a data-mdb-ripple-init class="btn link-btn btn-primary btn-lg btn-block" style="background-color: #3b5998"
-                  href="#!" role="button">
-                </a> -->
-                <div class="col-6 pe-1">
-                  <button type="" data-mdb-button-init data-mdb-ripple-init
-                    class="btn submit-button btn-lg btn-block w-100"><i
-                      class="fab fa-sm fa-facebook-f me-2"></i>Facebook</button>
-                </div>
-                <div class="col-6">
-                  <button type="" data-mdb-button-init data-mdb-ripple-init
-                    class="btn submit-button btn-lg btn-block w-100"><i
-                      class="fab fa-sm fa-google me-2"></i>Google</button>
-                </div>
-                <!-- <a data-mdb-ripple-init class="btn link-btn btn-primary btn-lg btn-block" style="background-color: #55acee"
-                  href="#!" role="button"> </a>-->
-
-              </div>
+                class="btn submit-button btn-lg btn-block w-100">Đăng ký</button>
+      
               <div class="justify-content-center text-center m-4">
-                <p>Chưa có tài khoản? <span class="fw-bold"><a href="register.html">Đăng ký</a></span></p>
+                <p>Bạn đã có tài khoản? <span class="fw-bold"><a href="login.html">Đăng nhập</a></span></p>
               </div>
 
             </form>

@@ -9,39 +9,47 @@
 
 /* Màu toàn cục - Các biến giữ màu sắc được áp dụng toàn bộ website. Thay đổi ở đây sẽ thay đổi màu sắc toàn bộ trang ở vị trí biến được gọi đến */
 :root {
-  --background-color: #ffffff;
   /*  Màu nền cho toàn bộ website, bao gồm cả các section riêng lẻ */
-  --default-color: #212529;
+  --background-color: #ffffff;
+
   /* Màu mặc định được dùng cho phần lớn nội dung văn bản trên toàn website */
-  --heading-color: #535353;
+  --default-color: #212529;
+
   /* Màu cho các tiêu đề, tiêu đề phụ và tiêu đề chính trên toàn website */
-  --accent-color: #465367;
+  --heading-color: #535353;
+
   /* Màu nhấn đại diện cho thương hiệu trên website. Dùng cho nút, liên kết và các phần tử cần nổi bật  */
-  --surface-color: #ffffff;
+  --accent-color: #465367;
+
   /*  Màu bề mặt dùng làm nền cho các phần tử dạng hộp trong section, ví dụ card, hộp icon hoặc các phần tử cần tách biệt trực quan với nền toàn cục */
-  --contrast-color: #ffffff;
+  --surface-color: #ffffff;
+
   /* Màu tương phản cho văn bản, đảm bảo dễ đọc trên các nền có màu nhấn, tiêu đề hoặc màu mặc định */
+  --contrast-color: #ffffff;
 }
 
-/* Màu cho Menu Điều Hướng (Nav Menu) - Các biến màu dưới đây được sử dụng riêng cho menu điều hướng. 
-   Chúng tách biệt với màu toàn cục để cho phép nhiều tùy chọn tùy chỉnh hơn */
+/* Màu cho Menu Điều Hướng (Nav Menu) - Các biến màu dưới đây được sử dụng riêng cho menu điều hướng. */
 :root {
-  --nav-color: #6a6a6a;
   /* Màu mặc định của các link trong menu chính (chưa hover) */
-  --nav-hover-color: #465367;
+  --nav-color: #6a6a6a;
+
   /* Màu khi link trong menu chính được hover hoặc đang active */
-  --nav-mobile-background-color: #ffffff;
+  --nav-hover-color: #465367;
+
   /* Màu nền của menu khi hiển thị trên mobile (ví dụ khi bật hamburger menu) */
-  --nav-dropdown-background-color: #ffffff;
+  --nav-mobile-background-color: #ffffff;
+
   /* Màu nền của menu con (dropdown) khi hiện ra */
-  --nav-dropdown-color: #6a6a6a;
+  --nav-dropdown-background-color: #ffffff;
+
   /* Màu chữ mặc định của các link trong dropdown */
-  --nav-dropdown-hover-color: #465367;
+  --nav-dropdown-color: #6a6a6a;
+
   /* Màu chữ khi hover vào link trong dropdown */
+  --nav-dropdown-hover-color: #465367;
 }
 
-/* Màu định sẵn (Color Presets) - Các class này sẽ ghi đè màu toàn cục khi áp dụng cho bất kỳ phần hoặc phần tử nào, 
-   giúp tái sử dụng cùng một bảng màu. */
+/* Màu định sẵn (Color Presets) - Các class ghi đè màu toàn cục khi áp dụng cho bất kỳ phần hoặc phần tử nào, giúp tái sử dụng cùng một bảng màu. */
 
 .light-background {
   --background-color: #f9f9f9;
@@ -56,13 +64,13 @@
   --contrast-color: #ffffff;
 }
 
-/* Smooth scroll */
+/* Hiệu ứng cuộn mượt */
 :root {
   scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
-# General Styling & Shared Classes
+# Hiệu ứng chung
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
@@ -93,7 +101,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Header
+# Header chung
 --------------------------------------------------------------*/
 .header {
   --background-color: #f2f2f2;
@@ -155,7 +163,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navbar
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
@@ -392,7 +400,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Footer
+# Footer chung
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
@@ -514,7 +522,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Preloader
+# Animation khi tải trang
 --------------------------------------------------------------*/
 #preloader {
   position: fixed;
@@ -549,7 +557,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Scroll Top Button
+# Button "lên đầu trang"
 --------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
@@ -582,7 +590,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
+# Tắt AOS delay trên điện thoại
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
@@ -591,7 +599,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
+# Tiêu đề trang chung & breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
@@ -628,7 +636,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Sections
+# Section chung
 --------------------------------------------------------------*/
 section,
 .section {
@@ -648,7 +656,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Global Section Titles
+# Tiêu đề section chung
 --------------------------------------------------------------*/
 .section-title {
   margin-bottom: 60px;
@@ -743,7 +751,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Trending Category Section
+# Section các danh mục nổi bật
 --------------------------------------------------------------*/
 .trending-category .post-entry {
   margin-bottom: 30px;
@@ -872,7 +880,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Culture Category Section
+# Section danh mục Văn hoá (tuỳ chọn) 
 --------------------------------------------------------------*/
 .culture-category .post-entry {
   margin-bottom: 30px;
@@ -979,7 +987,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Business Category Section
+# Section danh mục kinh doanh (tuỳ chọn)
 --------------------------------------------------------------*/
 .business-category .post-entry {
   margin-bottom: 30px;
@@ -1086,7 +1094,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Lifestyle Category Section
+# Section anh mục phong cách sống (tuỳ chọn)
 --------------------------------------------------------------*/
 .lifestyle-category .post-meta {
   font-size: 11px;
@@ -1148,7 +1156,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# About Section
+# Section mục Về Tôi
 --------------------------------------------------------------*/
 .about .content .who-we-are {
   text-transform: uppercase;
@@ -1216,7 +1224,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Team Section
+# Section Team
 --------------------------------------------------------------*/
 .team .team-member {
   background-color: var(--surface-color);
@@ -1349,7 +1357,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Blog Details Section
+# Section chi tiết blog
 --------------------------------------------------------------*/
 .blog-details {
   padding-bottom: 30px;
@@ -1502,7 +1510,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Blog Comments Section
+# Section bình luận
 --------------------------------------------------------------*/
 .blog-comments {
   padding: 10px 0;
@@ -1561,7 +1569,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Comment Form Section
+# Section form bình luận
 --------------------------------------------------------------*/
 .comment-form {
   padding-top: 10px;
@@ -1642,7 +1650,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Blog Posts Section
+# Section post 
 --------------------------------------------------------------*/
 .blog-posts article {
   background-color: var(--surface-color);
@@ -1722,7 +1730,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Blog Pagination Section
+# Section Pagination trang blog
 --------------------------------------------------------------*/
 .blog-pagination {
   padding-top: 0;
@@ -1761,7 +1769,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Contact Section
+# Section trang Liên lạc
 --------------------------------------------------------------*/
 .contact .info-item+.info-item {
   margin-top: 40px;
