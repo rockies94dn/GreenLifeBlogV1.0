@@ -4,7 +4,7 @@
 :root {
   --default-font: "EB Garamond", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "EB Garamond", sans-serif;
-  --nav-font: "Inter", sans-serif;
+  --nav-font: "Roboto", "Inter", "Times New Roman", sans-serif;
 }
 
 /* Màu toàn cục - Các biến giữ màu sắc được áp dụng toàn bộ website. Thay đổi ở đây sẽ thay đổi màu sắc toàn bộ trang ở vị trí biến được gọi đến */
