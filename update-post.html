@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Đăng bài viết mới</title>
+    <title>Chỉnh sửa bài viết</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -88,11 +88,11 @@
         <!-- Page Title -->
         <div class="page-title">
             <div class="container d-lg-flex justify-content-between align-items-center">
-                <h1 class="mb-2 mb-lg-0"><i class="fa fa-pencil me-2" aria-hidden="true"></i> Đăng bài mới</h1>
+                <h1 class="mb-2 mb-lg-0"><i class="fa fa-pencil me-2" aria-hidden="true"></i> Sửa bài viết</h1>
                 <nav class="breadcrumbs">
                     <ol>
                         <li><a href="index.html">Trang chủ</a></li>
-                        <li class="current">Đăng nhập</li>
+                        <li class="current"> Sửa bài viết</li>
                     </ol>
                 </nav>
             </div>
@@ -104,17 +104,19 @@
 
                 <form action="" data-aos="fade-up">
 
-                    <h4>Soạn bài viết mới</h4>
-                    <p>Điền các thông tin vào bên dưới* </p>
+                    <h4>Cập nhật bài viết của bạn</h4>
+                    <p>Thay đổi các thông tin chi tiết muốn cập nhật vào bên dưới* </p>
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="title" class="form-label" aria-hidden="true">Tiêu đề bài viết</label>
-                            <input name="title" type="text" class="form-control" placeholder="Nhập tiêu đề*">
+                            <input name="title" type="text" class="form-control"
+                                value="Sống Xanh, Sống Khỏe: Bí Quyết Giữ Lối Sống Bền Vững Hằng Ngày"
+                                placeholder="Nhập tiêu đề*">
                         </div>
                         <div class="col-md-6 form-group">
                             <label for="category" class="form-label" aria-hidden="true">Danh mục thể loại</label>
                             <select name="category" id="category" class="form-select">
-                                <option value="">Sức khoẻ</option>
+                                <option value="" selected>Sức khoẻ</option>
                                 <option value="">Phong cách sống</option>
                                 <option value="">Văn hoá</option>
                             </select>
@@ -156,19 +158,19 @@
                         <div class="col form-group">
                             <label for="summary" class="form-label" aria-hidden="true">Mô tả</label>
                             <textarea name="summary" class="form-control" row="3"
-                                placeholder="Nhập mô tả ngắn để giới thiệu về bài viết*"></textarea>
+                                placeholder="Nhập mô tả ngắn để giới thiệu về bài viết*">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nulla eum sit cumque quisquam fuga ex. Ducimus nesciunt rem accusantium dicta qui voluptas consequatur eligendi nulla cumque iusto, autem fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit</textarea>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col form-group">
                             <label for="content" class="form-label" aria-hidden="true">Nội dung chính</label>
-                            <textarea name="content" class="form-control" rows="15"
-                                placeholder="Nhập nội dung*"></textarea>
+                            <textarea name="content" class="form-control" rows="15" placeholder="Nhập nội dung*">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nulla eum sit cumque quisquam fuga ex. Ducimus nesciunt rem accusantium dicta qui voluptas consequatur eligendi nulla cumque iusto, autem fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat ratione vel eveniet eius magni amet voluptatibus rem quis doloribus. Labore inventore tempore vel debitis molestiae? Sed non magni optio?
+                            </textarea>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Đăng bài</button>
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-save"></i> Lưu thay đổi</button>
                     </div>
 
                 </form>
